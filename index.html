@@ -11,11 +11,10 @@
       --gold:#C4A35A;--gold-p:#F5EED8;--gold-b:#E2C87A;
       --ivory:#F2EDE6;--ivory2:#EAE3D9;--white:#FDFAF6;
       --t1:#1A1818;--t3:#8A7E72;--t4:#B5ABA0;
-      --ch:#6B4E8F;--cf:#A07820;--cn:#2E7D6A;
+      --ch:#6B4E8F;--cf:#A07820;--cn:#2E7D6A;--ci:#2A7A8A;
     }
     body{background:var(--ivory);color:var(--t1);font-family:'Helvetica Neue',Arial,sans-serif;-webkit-font-smoothing:antialiased;}
 
-    /* HEADER */
     .hdr{background:var(--white);border-bottom:1px solid var(--ivory2);padding:0 48px;}
     .hdr-in{max-width:1100px;margin:0 auto;padding:26px 0;display:flex;align-items:center;justify-content:space-between;}
     .logo{font-size:11px;font-weight:700;letter-spacing:3.5px;text-transform:uppercase;color:var(--blue);}
@@ -23,7 +22,6 @@
     .hdr-sub{font-size:10px;letter-spacing:2.5px;text-transform:uppercase;color:var(--t4);}
     .hdr-pill{background:var(--gold-p);color:var(--blue);font-size:9px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;padding:4px 12px;border-radius:20px;}
 
-    /* HERO */
     .hero{background:var(--white);padding:56px 48px 48px;border-bottom:1px solid var(--ivory2);}
     .hero-in{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr auto;align-items:end;gap:40px;}
     .hero h1{font-family:Georgia,serif;font-size:40px;font-weight:300;line-height:1.15;color:var(--blue);letter-spacing:-0.5px;margin-bottom:14px;}
@@ -34,7 +32,6 @@
     .hs-l{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--t4);margin-top:4px;}
     .hs-s{font-size:11px;color:var(--gold);margin-top:6px;font-weight:500;}
 
-    /* TABS */
     .tabs{background:var(--white);border-bottom:2px solid var(--ivory2);padding:0 48px;}
     .tabs-in{max-width:1100px;margin:0 auto;display:flex;}
     .tab{padding:20px 0;margin-right:40px;font-size:12px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;background:none;border:none;border-bottom:2px solid transparent;margin-bottom:-2px;cursor:pointer;color:var(--t4);transition:color .2s,border-color .2s;display:flex;align-items:center;gap:10px;}
@@ -42,7 +39,6 @@
     .tbadge{background:var(--gold-p);color:var(--blue);font-size:9px;font-weight:700;letter-spacing:1px;padding:2px 8px;border-radius:10px;}
     .tbadge-g{background:var(--gold);color:#fff;font-size:9px;font-weight:700;letter-spacing:1px;padding:2px 8px;border-radius:10px;}
 
-    /* GRID */
     .gw{padding:36px 48px 72px;}
     .gi{max-width:1100px;margin:0 auto;}
     .gm{display:flex;align-items:center;justify-content:space-between;margin-bottom:24px;}
@@ -50,7 +46,6 @@
     .gn{font-size:11px;color:var(--t4);}
     .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
 
-    /* CARD */
     .card{background:var(--white);border:1px solid var(--ivory2);display:flex;flex-direction:column;transition:box-shadow .22s,transform .22s;}
     .card:not(.soon):not(.trailer):hover{box-shadow:0 10px 36px rgba(27,53,101,.09);transform:translateY(-3px);}
     .soon{opacity:.55;}
@@ -67,7 +62,6 @@
     .btn-on{background:var(--blue);color:#fff;}.btn-on:hover{background:var(--blue2);}
     .btn-off{background:var(--ivory2);color:var(--t4);cursor:default;}
 
-    /* TRAILER */
     .trailer{grid-column:1/-1;flex-direction:row;align-items:stretch;border:1.5px solid var(--gold-b);background:linear-gradient(135deg,#FFFCF0 0%,var(--white) 55%);}
     .trailer:hover{box-shadow:0 14px 44px rgba(196,163,90,.20);transform:translateY(-3px);}
     .trailer .cb{flex:1;}
@@ -78,10 +72,8 @@
     .btn-tr{background:var(--gold-p);color:#8A6820;border:1px solid var(--gold-b);cursor:default;font-size:10px;padding:11px 20px;width:auto;white-space:nowrap;letter-spacing:1.5px;}
     .tr-eyebrow{font-size:9px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:6px;}
 
-    /* SECTIONS */
     .aud{display:none;}.aud.on{display:block;}
 
-    /* FOOTER */
     .ftr{background:var(--blue);padding:44px 48px;text-align:center;}
     .fl{font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:rgba(255,255,255,.28);margin-bottom:10px;}
     .fg{color:var(--gold);margin:0 7px;}
@@ -121,9 +113,9 @@
       <p>Des ressources scientifiques gratuites pour les femmes qui veulent enfin lire leur biologie et pour les professionnelles qui les accompagnent au quotidien.</p>
     </div>
     <div class="hstat">
-      <div class="hs-n">5</div>
+      <div class="hs-n">6</div>
       <div class="hs-l">Ressources en bibliothèque</div>
-      <div class="hs-s">3 disponibles aujourd'hui</div>
+      <div class="hs-s">4 disponibles aujourd'hui</div>
     </div>
   </div>
 </section>
@@ -131,7 +123,7 @@
 <nav class="tabs">
   <div class="tabs-in">
     <button class="tab on" onclick="switchTab('btoc',this)">
-      Pour vous <span class="tbadge">3 guides</span>
+      Pour vous <span class="tbadge">4 guides</span>
     </button>
     <button class="tab" onclick="switchTab('btob',this)">
       Pour les professionnelles <span class="tbadge-g">Dès le 1er août</span>
@@ -139,17 +131,17 @@
   </div>
 </nav>
 
-
 <!-- B2C -->
 <div class="aud on" id="block-btoc">
   <div class="gw">
     <div class="gi">
       <div class="gm">
-        <div class="gc">3 guides disponibles</div>
+        <div class="gc">4 guides disponibles</div>
         <div class="gn">Tous les téléchargements sont gratuits</div>
       </div>
       <div class="cards">
 
+        <!-- THYROÏDE -->
         <div class="card">
           <span class="cst" style="background:var(--ch)"></span>
           <div class="cb">
@@ -163,6 +155,7 @@
           <div class="cf"><a href="https://mcusercontent.com/9eb262f10e6d7edfc06b1be20/files/bc5423f8-3fde-86e1-c2d6-7b2022e0609f/AOK_Guide_Thyroide_30j_9_.pdf" class="btn btn-on">Télécharger le guide</a></div>
         </div>
 
+        <!-- 30 ESPÈCES -->
         <div class="card">
           <span class="cst" style="background:var(--cn)"></span>
           <div class="cb">
@@ -176,6 +169,7 @@
           <div class="cf"><a href="https://mcusercontent.com/9eb262f10e6d7edfc06b1be20/files/d92179d5-2df7-78d9-47b0-0695b2fc8b75/AOK_30_Especes_Microbiome_Thyroide.pdf_1_.pdf" class="btn btn-on">Télécharger le guide</a></div>
         </div>
 
+        <!-- NIVEAU 1 -->
         <div class="card">
           <span class="cst" style="background:var(--gold)"></span>
           <div class="cb">
@@ -189,24 +183,25 @@
           <div class="cf"><a href="https://mcusercontent.com/9eb262f10e6d7edfc06b1be20/files/81ad5493-bc7c-5f42-3ec9-8c131269265c/AOK_L_Expertise_Nutritionnelle_Niveau1.pdf.pdf" class="btn btn-on">Télécharger le guide</a></div>
         </div>
 
-      </div>
+        <!-- SYSTÈME IMMUNITAIRE -->
+        <div class="card">
+          <span class="cst" style="background:var(--ci)"></span>
+          <div class="cb">
+            <div class="ct">
+              <span class="cbg" style="background:#EAF4F5;color:var(--ci)">Immunité</span>
+              <span class="cs son">· Disponible</span>
+            </div>
+            <div class="ctit">Le système immunitaire</div>
+            <div class="cdesc">Du terrain auto-immun à la rémission : tout ce que la science documente aujourd'hui sur les maladies auto-immunes — mécanismes, facteurs déclencheurs et voies de rémission.</div>
+          </div>
+          <div class="cf"><a href="https://mcusercontent.com/9eb262f10e6d7edfc06b1be20/files/4f03367c-406f-8fe1-bc70-83ecf8c8ea85/AOK_Le_Systeme_Immunitaire_compressed.pdf" class="btn btn-on">Télécharger le guide</a></div>
+        </div>
+
+      </div><!-- /cards -->
     </div>
   </div>
 </div>
 
-<div class="card" data-cat="immunite">
-  <span class="cst" style="background:#2A7A8A"></span>
-  <div class="cb">
-    <div class="ct">
-      <span class="cbg" style="background:#EAF4F5;color:#2A7A8A">Immunité</span>
-      <span class="cs son">· Disponible</span>
-    </div>
-    <div class="ctit">Le sytème immunitaire</div>
-    <div class="cdesc">Tout ce que la science documente aujourd'hui sur les maladies auto-immunes — mécanismes, facteurs déclencheurs et voies de rémission.</div>
-  </div>
-  <div class="cf"><a href="https://mcusercontent.com/9eb262f10e6d7edfc06b1be20/files/4f03367c-406f-8fe1-bc70-83ecf8c8ea85/AOK_Le_Systeme_Immunitaire_compressed.pdf" class="btn btn-on">Télécharger le guide</a></div>
-</div>
-  
 <!-- B2B -->
 <div class="aud" id="block-btob">
   <div class="gw">
@@ -226,7 +221,7 @@
               <span class="cs sgold">· 1er août 2026</span>
             </div>
             <div class="ctit">Lire ses marqueurs biologiques — Guide professionnel</div>
-            <div class="cdesc">Vitamine D, fer, TSH, insuline à jeun, cortisol les seuils réels, pas seulement les normes de laboratoire. Comprendre ce que vos clientes voient dans leurs résultats pour les orienter avec précision, sans diagnostiquer.</div>
+            <div class="cdesc">Vitamine D, fer, TSH, insuline à jeun, cortisol — les seuils réels, pas seulement les normes de laboratoire. Comprendre ce que vos clientes voient dans leurs résultats pour les orienter avec précision, sans diagnostiquer.</div>
           </div>
           <div class="tr-right">
             <div class="tr-pill">Premier dossier</div>
@@ -251,15 +246,14 @@
           <div class="cf"><button class="btn btn-off">Bientôt disponible</button></div>
         </div>
 
-      </div>
+      </div><!-- /cards -->
     </div>
   </div>
 </div>
 
-
 <footer class="ftr">
   <div class="fl">Alpha<span class="fg">·</span>Omega Key</div>
-  <div class="ft">Tu fais attention, Mais ton corps a changé les règles</div>
+  <div class="ft">Tu fais attention. Mais ton corps a changé les règles.</div>
   <div class="fd">Lancement · Septembre 2026</div>
 </footer>
 
